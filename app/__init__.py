@@ -15,7 +15,7 @@ def create_app(config_object=None):
     register_extensions(app)
    
     CORS(app, 
-     origins=["http://localhost:3000", "http://127.0.0.1:3000", "https://instaclean.vercel.app"],
+     origins=["http://localhost:3000", "http://127.0.0.1:3000", "https://instaclean.vercel.app", "https://instagram-cleanup-tool-api.vercel.app"],
      supports_credentials=True)
    
     app.register_blueprint(api_bp, url_prefix='/api')

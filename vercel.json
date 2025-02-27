@@ -1,15 +1,20 @@
 {
-    "version": 2,
-    "builds": [
+  "version": 2,
+  "builds": [
       {
-        "src": "run.py",
-        "use": "@vercel/python"
+          "src": "run.py",
+          "use": "@vercel/python"
       }
-    ],
-    "routes": [
+  ],
+  "routes": [
       {
-        "src": "/(.*)",
-        "dest": "run.py"
+          "src": "/(.*)",
+          "dest": "run.py",
+          "headers": {
+              "Access-Control-Allow-Origin": "https://instaclean.vercel.app",
+              "Access-Control-Allow-Methods": "GET, POST, OPTIONS, PUT, DELETE",
+              "Access-Control-Allow-Headers": "Content-Type, Authorization"
+          }
       }
-    ]
-  }
+  ]
+}
