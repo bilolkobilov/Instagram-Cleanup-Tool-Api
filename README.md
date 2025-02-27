@@ -10,35 +10,6 @@ A RESTful API service for managing and cleaning up Instagram content, including 
 - Monitor deletion progress and statistics
 - User authentication with Instagram credentials
 
-## Project Structure
-
-```
-instagram_cleanup_api/
-├── .env                    # Environment variables
-├── .gitignore              # Git ignore file
-├── README.md               # Project documentation
-├── requirements.txt        # Project dependencies
-├── wsgi.py                 # WSGI entry point for production servers
-├── config.py               # Configuration settings
-├── run.py                  # Development server entry point
-├── app/
-│   ├── __init__.py         # Application factory
-│   ├── extensions.py       # Flask extensions
-│   ├── api/
-│   │   ├── __init__.py     # API Blueprint initialization
-│   │   ├── routes.py       # API route definitions
-│   │   ├── auth.py         # Authentication routes
-│   │   └── content.py      # Content deletion routes
-│   ├── services/
-│   │   ├── __init__.py
-│   │   ├── instagram.py    # Instagram client service
-│   │   └── deletion.py     # Content deletion service
-│   └── utils/
-│       ├── __init__.py
-│       ├── decorators.py   # Custom decorators
-│       └── helpers.py      # Helper functions
-```
-
 ## Setup
 
 1. Clone the repository
