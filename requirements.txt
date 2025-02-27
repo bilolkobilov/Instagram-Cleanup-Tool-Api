@@ -4,3 +4,4 @@ Flask-Cors==5.0.1
 python-dotenv==1.0.1
 instagrapi==2.1.3
 gunicorn==20.1.0
+Pillow>=8.1.1
