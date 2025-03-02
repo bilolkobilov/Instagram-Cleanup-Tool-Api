@@ -19,5 +19,9 @@ def create_app(config_object=None):
      supports_credentials=True)
    
     app.register_blueprint(api_bp, url_prefix='/api')
+
+    @app.route('/favicon.ico')
+    def favicon():
+        return ('', 204) 
    
     return app
