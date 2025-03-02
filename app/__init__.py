@@ -23,5 +23,9 @@ def create_app(config_object=None):
     @app.route('/favicon.ico')
     def favicon():
         return ('', 204) 
-   
+    
+    @app.route('/')
+    def home():
+        return 'Welcome to Instagram Cleanup Tool API!', 200
+
     return app
